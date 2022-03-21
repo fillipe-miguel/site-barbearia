@@ -1,0 +1,304 @@
+@charset 'utf-8';
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+/* --------------------------------- SERVICES START --------------------------------- */
+
+.m-services,
+.m-aboutUs,
+.m-informations {
+	align-items: center;
+	background: rgb(24, 24, 24);
+	color: var(--font-color);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 50px;
+	min-height: 100vh;
+}
+
+.m-services__title {
+	font-size: 2.5rem;
+	font-weight: bolder;
+	margin-bottom: 30px;
+	position: relative;
+	width: 80%;
+}
+
+.m-services__title::after {
+	content: 'Serviços';
+	font-size: 5.5rem;
+	font-style: italic;
+	left: 25%;
+	opacity: 0.07;
+	position: absolute;
+	top: -150%;
+}
+
+.m-services__description {
+	font-size: 1.5rem;
+	font-style: italic;
+	width: 80%;
+}
+
+.m-services__cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px auto;
+	width: 85%;
+}
+
+.m-services__card {
+	background: rgb(24, 24, 24);
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	min-height: 170px;
+	max-width: 85%;
+	margin-bottom: 20px;
+	max-height: 300px;
+	position: relative;
+}
+
+.m-services__card__pictureBox {
+	width: 12%;
+}
+
+.m-services__card__titleBox {
+	align-items: center;
+	display: flex;
+}
+
+.m-services__card__title,
+.m-aboutUs__card__title,
+.m-informations__card__title {
+	font-size: 2.5rem;
+	font-weight: bolder;
+	margin-left: 10px;
+	position: relative;
+	z-index: 2000;
+}
+
+.m-services__card__title::before,
+.m-aboutUs__card__title::before {
+	color: rgb(182, 0, 0);
+	content: ' ';
+	font-size: 1.2em;
+	left: 15%;
+	opacity: 0.4;
+	position: absolute;
+	top: -40%;
+	z-index: -1;
+}
+
+.card__title--beforeHaircut::before {
+	content: 'HAIRCUT';
+}
+
+.card__title--beforeMoustache::before {
+	content: 'MOUSTACHE';
+	left: 13%;
+}
+
+.card__title--beforeShave::before {
+	content: 'SHAVE';
+}
+
+.card__title--beforeFacialCare::before {
+	content: 'SKIN CARE';
+	width: 140%;
+}
+
+.card__title--beforeHydration::before {
+	content: 'HYDRATION';
+}
+
+.card__title--beforeEyebrow::before {
+	content: 'EYEBROW';
+}
+
+.m-services__card__text,
+.m-aboutUs__card__text,
+.m-informations__card__text {
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.m-services__card__button,
+.m-aboutUs__card__button {
+	background: linear-gradient(7deg, rgb(182, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	text-align: end;
+	border: none;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 7px 20px;
+	right: 10px;
+	bottom: -20px;
+}
+
+.m-services__card__button:hover,
+.m-aboutUs__card__button:hover {
+	text-shadow: 0.5px 0px 1px white;
+	box-shadow: 1px 1px 20px rgb(0, 0, 0);
+	background: linear-gradient(14deg, rgb(182, 0, 0), black);
+}
+
+/* --------------------------------- ABOUT US START --------------------------------- */
+
+/* Algumas propiedades estão sendo aplicadas junto com o .m-services */
+.m-aboutUs {
+	background: rgb(35, 35, 35);
+	padding-top: 0;
+}
+
+.m-aboutUs__card,
+.m-informations__card {
+	width: 85%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.m-aboutUs__card__pictureBox {
+	display: flex;
+	align-items: center;
+	border: 3px solid rgb(123, 2, 2);
+	border-radius: 5px;
+}
+
+.m-aboutUs__card__textBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px 0px;
+	position: relative;
+	width: 100%;
+}
+
+/* Algumas propiedades estão sendo aplicadas com o .m-services__card__title */
+.m-aboutUs__card__title {
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+
+/* Algumas propiedades estão sendo aplicadas com o .m-services__card__title::before */
+.m-aboutUs__card__title::before {
+	content: 'SOBRE NÓS';
+	opacity: 0.6;
+	left: 10%;
+}
+
+/* Algumas propiedades estão sendo aplicadas com o .m-services__card__text
+.m-aboutUs__card__text {
+} */
+
+/* Algumas propiedades estão sendo aplicadas com o .m-services__card__button */
+.m-aboutUs__card__button {
+	padding: 13px 100px;
+	text-align: center;
+	position: relative;
+	left: 0px;
+}
+
+/* --------------------------------- INFORMATIONS START --------------------------------- */
+
+/* Algumas propiedades estão sendo aplicadas junto com o .m-services */
+.m-informations {
+	background: url(../assets/backgrounds/background-informations.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0;
+}
+
+/* Algumas propiedades estão sendo aplicadas com o .m-aboutUs__card */
+.m-informations__card {
+	align-items: center;
+	justify-content: center;
+}
+
+.m-informations__card__map {
+	width: 80vw;
+	height: 50vh;
+	margin: auto;
+	border: 3px solid rgb(123, 2, 2);
+	border-radius: 5px;
+	opacity: 0.8;
+}
+
+.m-informations__card__textBox {
+	text-align: center;
+}
+
+.m-informations__card__title {
+	margin: 5px 0px 15px 0px;
+	font-size: 2.5rem;
+}
+
+/* Algumas propiedades estão sendo aplicadas com o .m-services__card__text
+.m-informations__card__text{
+
+} */
+
+.m-informations__card__list {
+	list-style: none;
+	font-size: 1rem;
+}
+
+@media (min-width: 480px) {
+}
+
+/* Deveria ser 760px */
+@media (min-width: 850px) {
+	.m-services__cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.m-services__card {
+		max-width: 30%;
+	}
+
+	/* --------------------------------- ABOUT US START --------------------------------- */
+
+	.m-aboutUs__card,
+	.m-informations__card {
+		flex-direction: row;
+	}
+
+	.m-aboutUs__card__pictureBox {
+        order: 2;
+		width: 50%;
+	}
+
+	.m-aboutUs__card__textBox {
+		margin: 0px 20px;
+		width: 50%;
+	}
+
+	/* --------------------------------- INFORMATIONS START --------------------------------- */
+
+	.m-informations__card__map {
+		width: 50%;
+	}
+
+	.m-informations__card__textBox {
+		width: 50%;
+		text-align: start;
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1200px) {
+}
