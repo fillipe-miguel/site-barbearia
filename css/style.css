@@ -29,3 +29,44 @@ html {
 	--font-color: rgb(255, 255, 255);
 	--line-color: rgba(255, 255, 255, 0.508);
 }
+
+/* Inicio o backbutton */
+
+.button-back-page {
+	position: fixed;
+	visibility: hidden;
+	right: 50px;
+	bottom: 50px;
+	background: linear-gradient(7deg, rgb(182, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+	border-radius: 50%;
+	border: 1.7px solid black;
+	opacity: 0;
+	display: flex;
+	transition: 0.5s;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+@keyframes button-back-page-animation {
+	to {
+		transform: translateY(5px);
+	}
+}
+
+.button-back-page:hover {
+	animation: button-back-page-animation 0.5s ease-out infinite alternate;
+}
+
+.button-back-page::after {
+	content: url(../assets/icons/angle-up.png);
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.is-ative {
+	visibility: visible;
+	opacity: 1;
+}
