@@ -23,12 +23,12 @@
 	justify-content: center;
 	position: absolute;
 	top: -100vh;
-	transition: transform 1s;
+	transition: transform 1.5s;
 	width: 100%;
 }
 
 /* ADICIONAR NO HTML /// JAVASCRIPT */
-.h-nav--open {
+.is--open {
 	transform: translateY(100vh);
 }
 
@@ -69,6 +69,7 @@
 	position: absolute;
 	top: 50vh;
 	width: 100%;
+	transition: opacity 2s;
 }
 
 .is--decoration {
@@ -76,6 +77,10 @@
 	width: 104%;
 	height: 100%;
 	left: calc(50% - 104% / 2);
+}
+
+.is--hidden {
+	opacity: 0;
 }
 
 .h-nav__bannerBox__banner__figureBox {

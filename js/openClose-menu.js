@@ -1,15 +1,14 @@
-const openClass = 'h-nav--open';
+const openClass = 'is--open';
+const hiddenClass = 'is--hidden';
 let widthScreen = window.innerWidth;
 
 console.log(widthScreen);
 
 let menu = document.querySelector('.h-nav');
 let menuButton = document.querySelectorAll('.h-nav__link');
+let flagButton = document.querySelectorAll('.h-nav__bannerBox__banner');
 
 if (widthScreen < 850) {
-	console.log(widthScreen);
-	let flagButton = document.querySelectorAll('.h-nav__bannerBox__banner');
-
 	flagButton[1].addEventListener('click', click);
 
 	menuButton.forEach((e) => {
@@ -27,8 +26,10 @@ function click() {
 
 function openMenu() {
 	menu.classList.add(openClass);
+	flagButton[1].classList.add(hiddenClass);
 }
 
 function closeMenu() {
 	menu.classList.remove(openClass);
+	flagButton[1].classList.remove(hiddenClass);
 }
