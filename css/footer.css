@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+.footer {
+	height: 100px;
+	background: rgb(35, 35, 35);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.f-text__link{
+    text-decoration: underline;
+}
+
+.f-text {
+	font-size: 12px;
+	line-height: 20px;
+	text-align: justify;
+}
