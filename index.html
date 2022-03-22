@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/modal.css">
 		<title>Barber Shop</title>
 	</head>
 	<body>
@@ -331,7 +332,37 @@
 
 		<!-- Botão para voltar pra cima! Estilo no style.css -->
 		<button class="button-back-page"></button>
+
+		<!-- Modal de marcar horário -->
+		<div class="modal">
+			<div class="modal__container">
+				<h2 class="modal__title">Marcar horário para </h1>
+				<form class="modal__form" action="/">
+					<label class="modal__label" for="nome">Nome:</label>
+					<input class="modal__input" type="text" name="nome" placeholder="Nome" />
+					<label class="modal__label"  for="tel">Telefone</label>
+					<input class="modal__input" type="number" name="tel"/>
+					<label class="modal__label"  for="date">Data do agendamento:</label>
+					<input class="modal__input" type="date" name="date"/>
+					<label class="modal__label"  for="time">Horário do agendamento:</label>
+					<input class="modal__input" type="time" name="time"/>
+					<ul>
+						<li>
+							<input class="modal__input" type="checkbox" name="chek" >
+							<label class="modal__label"  for="chek">Enviar informações sobre o agendamento por WhatsApp</label>
+						</li>
+					</ul>
+					<input class="modal__button" type="button" value="Enviar">
+					<input class="modal__button" type="button" value="Cancelar">
+					
+				</form>
+			</div>
+		</div>
+
+
+
 		<script src="js/back-button.js"></script>
-		<script src="js/openClose-menu.js"></script>
+		<script src="js/menuController.js"></script>
+		<script src="js/modalController.js"></script>
 	</body>
 </html>

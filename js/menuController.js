@@ -1,6 +1,6 @@
 const openClass = 'is--open';
 const hiddenClass = 'is--hidden';
-let widthScreen = window.innerWidth;
+let widthScreen = window.screen.width;
 
 console.log(widthScreen);
 
