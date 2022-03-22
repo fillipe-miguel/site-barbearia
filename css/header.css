@@ -30,7 +30,6 @@
 /* ADICIONAR NO HTML /// JAVASCRIPT */
 .h-nav--open {
 	transform: translateY(100vh);
-	overflow: hidden;
 }
 
 .h-nav__menu {

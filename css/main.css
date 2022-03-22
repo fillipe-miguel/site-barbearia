@@ -140,7 +140,7 @@
 	font-size: 1rem;
 	padding: 7px 20px;
 	right: 10px;
-	bottom: -20px;
+	bottom: 0px;
 }
 
 .m-services__card__button:hover,
@@ -203,8 +203,8 @@
 .m-aboutUs__card__button {
 	padding: 13px 100px;
 	text-align: center;
-	position: relative;
-	left: 0px;
+	position: unset;
+	margin-top: 20px;
 }
 
 /* --------------------------------- INFORMATIONS START --------------------------------- */
@@ -275,7 +275,7 @@
 	}
 
 	.m-aboutUs__card__pictureBox {
-        order: 2;
+		order: 2;
 		width: 50%;
 	}
 
