@@ -1,10 +1,13 @@
 const openClass = 'h-nav--open';
-let widthScreen = window.screenX;
+let widthScreen = window.innerWidth;
+
+console.log(widthScreen);
 
 let menu = document.querySelector('.h-nav');
 let menuButton = document.querySelectorAll('.h-nav__link');
 
 if (widthScreen < 850) {
+	console.log(widthScreen);
 	let flagButton = document.querySelectorAll('.h-nav__bannerBox__banner');
 
 	flagButton[1].addEventListener('click', click);
