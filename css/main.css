@@ -21,26 +21,28 @@
 }
 
 .m-services__title {
-	font-size: 2.5rem;
+	font-size: 1.7rem;
 	font-weight: bolder;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	position: relative;
 	width: 80%;
 }
 
 .m-services__title::after {
 	content: 'Serviços';
-	font-size: 5.5rem;
+	font-size: 4rem;
 	font-style: italic;
-	left: 25%;
+	left: 10px;
 	opacity: 0.07;
 	position: absolute;
-	top: -150%;
+	top: -100%;
 }
 
 .m-services__description {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-style: italic;
+	font-weight: normal;
+	text-align: center;
 	width: 80%;
 }
 
@@ -65,7 +67,7 @@
 }
 
 .m-services__card__pictureBox {
-	width: 12%;
+	width: 50px;
 }
 
 .m-services__card__titleBox {
@@ -76,9 +78,9 @@
 .m-services__card__title,
 .m-aboutUs__card__title,
 .m-informations__card__title {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: bolder;
-	margin-left: 10px;
+	margin-left: 5px;
 	position: relative;
 	z-index: 2000;
 }
@@ -87,11 +89,11 @@
 .m-aboutUs__card__title::before {
 	color: rgb(182, 0, 0);
 	content: ' ';
-	font-size: 1.2em;
-	left: 15%;
-	opacity: 0.4;
+	font-size: 2rem;
+	left: 10px;
+	opacity: 0.3;
 	position: absolute;
-	top: -40%;
+	top: -50%;
 	z-index: -1;
 }
 
@@ -126,21 +128,21 @@
 .m-informations__card__text {
 	font-size: 1rem;
 	margin-top: 10px;
+	text-align: center;
 }
 
 .m-services__card__button,
 .m-aboutUs__card__button {
+	align-self: flex-end;
 	background: linear-gradient(7deg, rgb(182, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-	text-align: end;
+	border-radius: 5px;
 	border: none;
 	color: white;
 	cursor: pointer;
-	position: absolute;
-	border-radius: 5px;
 	font-size: 1rem;
+	margin-top: 10px;
 	padding: 7px 20px;
-	right: 10px;
-	bottom: 0px;
+	width: fit-content;
 }
 
 .m-services__card__button:hover,
@@ -184,15 +186,13 @@
 
 /* Algumas propiedades estão sendo aplicadas com o .m-services__card__title */
 .m-aboutUs__card__title {
-	margin-left: 0px;
-	margin-bottom: 20px;
+	margin: 20px 0px 10px 0px;
 }
 
 /* Algumas propiedades estão sendo aplicadas com o .m-services__card__title::before */
 .m-aboutUs__card__title::before {
 	content: 'SOBRE NÓS';
-	opacity: 0.6;
-	left: 10%;
+	opacity: 0.4;
 }
 
 /* Algumas propiedades estão sendo aplicadas com o .m-services__card__text
@@ -201,9 +201,8 @@
 
 /* Algumas propiedades estão sendo aplicadas com o .m-services__card__button */
 .m-aboutUs__card__button {
-	padding: 13px 100px;
-	text-align: center;
-	position: unset;
+	width: 100%;
+	padding: 10px 0px;
 	margin-top: 20px;
 }
 
@@ -240,7 +239,7 @@
 
 .m-informations__card__title {
 	margin: 5px 0px 15px 0px;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 /* Algumas propiedades estão sendo aplicadas com o .m-services__card__text
@@ -254,6 +253,14 @@
 }
 
 @media (min-width: 480px) {
+	.m-services__description {
+		text-align: justify;
+	}
+	.m-services__card__text,
+	.m-aboutUs__card__text,
+	.m-informations__card__text {
+		text-align: justify;
+	}
 }
 
 /* Deveria ser 760px */

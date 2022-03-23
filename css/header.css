@@ -41,7 +41,7 @@
 
 .h-nav__link {
 	color: var(--font-color);
-	font-size: 2rem;
+	font-size: 1.4rem;
 	margin: 0px 20px;
 	padding: 40px 20px;
 	text-align: center;
@@ -95,13 +95,13 @@
 	display: flex;
 	font-family: 'Great Vibes', cursive;
 	flex-direction: column;
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	font-weight: bolder;
 }
 
 .h-nav__bannerBox__banner__title::after {
 	content: 'Desde 1987';
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: normal;
 	margin-top: 25px;
 }
@@ -111,14 +111,13 @@
 	color: var(--font-color);
 	display: flex;
 	flex-direction: column;
-	/* margin-top: 190px; */
 	font-family: 'Great Vibes', cursive;
 }
 
 .h-titles__title-b {
 	align-items: center;
 	display: flex;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-family: 'Great Vibes', cursive;
 }
 
@@ -129,23 +128,24 @@
 	background: var(--line-color);
 	content: '';
 	display: block;
-	height: 1.5px;
-	margin: 20px;
-	width: 15px;
+	height: 4px;
+	margin: 0px 20px;
+	width: 25px;
+	border-radius: 30%;
 }
 
 .h-titles__title-a {
-	font-size: 5rem;
+	font-size: 4rem;
 	font-family: 'Great Vibes', cursive;
-	line-height: 100%;
 }
 
 .h-titles__title-a::before {
 	background: var(--line-color);
 	content: '';
 	display: block;
-	margin-bottom: 15px;
-	height: 1.5px;
+	margin-bottom: 20px;
+	height: 5px;
+	border-radius: 2px;
 	width: 100%;
 }
 
@@ -153,8 +153,8 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	margin-top: -30px;
-	width: 100px;
+	margin-top: -40px;
+	width: 150px;
 	height: fit-content;
 }
 
@@ -182,8 +182,9 @@
 	content: '';
 	display: block;
 	margin-bottom: 10px;
-	height: 1.5px;
-	width: 150%;
+	height: 5px;
+	border-radius: 2px;
+	width: 100%;
 }
 
 @media (min-width: 480px) {
@@ -221,25 +222,25 @@
 }
 
 @media (min-width: 1025px) {
-	.h-titles__title-b {
+	/* .h-titles__title-b {
 		font-size: 3rem;
 	}
 	.h-titles__title-a {
-		font-size: 7.5rem;
+		font-size: 6rem;
 	}
 	.h-titles__title-c {
 		font-size: 3rem;
-	}
+	} */
 }
 
-@media (min-width: 1200px) {
-	.h-titles__title-b {
+@media (min-width: 1500px) {
+	/* .h-titles__title-b {
 		font-size: 4rem;
 	}
 	.h-titles__title-a {
-		font-size: 10rem;
+		font-size: 8rem;
 	}
 	.h-titles__title-c {
-		font-size: 4rem;
-	}
+		font-size: 3rem;
+	} */
 }
