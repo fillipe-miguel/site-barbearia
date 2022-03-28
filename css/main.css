@@ -264,7 +264,7 @@
 }
 
 /* Deveria ser 760px */
-@media (min-width: 850px) {
+@media (min-width: 950px) {
 	.m-services__cards {
 		flex-direction: row;
 		flex-wrap: wrap;	
@@ -272,9 +272,14 @@
 	}
 
 	.m-services__card {
-		max-width: 30%;
+		max-width: 31.5%;
 		min-height: 300px;
-		justify-content: space-evenly;
+		/* justify-content: space-between; */
+	}
+
+	.m-services__card__text{
+		height: 150px;
+		display: block;
 	}
 
 	/* --------------------------------- ABOUT US START --------------------------------- */

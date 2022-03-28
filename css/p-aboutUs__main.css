@@ -20,16 +20,38 @@
 .m-aboutUs__image {
 	border: 3px solid rgb(123, 2, 2);
 	border-radius: 5px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-.m-aboutUs__title{
-    font-size: 2rem;
-    font-style: italic;
-    margin-bottom: 20px;
+.m-aboutUs__title {
+	font-size: 2rem;
+	font-style: italic;
+	margin-bottom: 20px;
 }
 
-.m-aboutUs__description{
-    text-align: center;
-    font-size: 1rem;
+.m-aboutUs__description {
+	text-align: center;
+	font-size: 1rem;
+}
+
+@media (min-width: 480px) {
+}
+
+/* Deveria ser 760px */
+@media (min-width: 950px) {
+    .m-aboutUs{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .m-aboutUs__card{
+        width: 40%;
+        margin: 0px 20px 60px;
+    }
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1200px) {
 }
