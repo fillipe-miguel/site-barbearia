@@ -36,6 +36,13 @@
 	transform: translateY(0);
 }
 
+.h-nav__closeButton {
+	position: absolute;
+	font-size: 2rem;
+	top: 30px;
+	right: 50px;
+}
+
 .h-nav__menu {
 	display: flex;
 	flex-direction: column;
@@ -96,6 +103,13 @@
 	flex-direction: column;
 	font-size: 1.8rem;
 	font-weight: bolder;
+}
+
+.h-nav__bannerBox__banner::after {
+	content: url(../assets/icons/menu_icon.png);
+	position: absolute;
+	top: 15px;
+	transform: scale(1.2);
 }
 
 .h-nav__bannerBox__banner__title::after {
@@ -195,6 +209,12 @@
 		flex-direction: row;
 		height: unset;
 		top: 0px;
+		transform: translateY(0);
+	}
+
+	.h-nav__closeButton {
+		display: none;
+		visibility: hidden;
 	}
 
 	.h-nav__menu {
@@ -218,6 +238,8 @@
 	.h-nav__bannerBox__banner {
 		top: 0;
 	}
+
+	
 }
 
 @media (min-width: 1025px) {
