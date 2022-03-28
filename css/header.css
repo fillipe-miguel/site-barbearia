@@ -235,11 +235,13 @@
 		width: 150px;
 	}
 
+	.h-nav__bannerBox__banner::after {
+		display: none;
+	}
+
 	.h-nav__bannerBox__banner {
 		top: 0;
 	}
-
-	
 }
 
 @media (min-width: 1025px) {
