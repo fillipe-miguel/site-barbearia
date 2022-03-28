@@ -14,6 +14,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	margin-bottom: 60px;
 }
 
@@ -39,15 +40,22 @@
 
 /* Deveria ser 760px */
 @media (min-width: 950px) {
-    .m-aboutUs{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+	.m-aboutUs {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
 
-    .m-aboutUs__card{
-        width: 40%;
-        margin: 0px 20px 60px;
-    }
+	.m-aboutUs__image {
+		width: 80%;
+	}
+
+	.m-aboutUs__card {
+		width: 40%;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 @media (min-width: 1025px) {
