@@ -2,15 +2,16 @@
 
 .header {
 	align-items: center;
+	background-attachment: fixed;
 	background-image: url('../assets/backgrounds/background-header.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
 	height: 766px;
 	justify-content: center;
+	overflow: auto;
 	position: relative;
 }
 
@@ -21,15 +22,18 @@
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center;
+	opacity: 1;
 	position: absolute;
-	top: -100vh;
-	transition: transform 1.5s;
+	top: 0px;
+	transform: translateY(-100vh);
+	transition-duration: 1s;
+	transition-property: transform;
 	width: 100%;
 }
 
 /* ADICIONAR NO HTML /// JAVASCRIPT */
 .is--open {
-	transform: translateY(100vh);
+	transform: translateY(0);
 }
 
 .h-nav__menu {
@@ -69,7 +73,6 @@
 	position: absolute;
 	top: 50vh;
 	width: 100%;
-	transition: opacity 2s;
 }
 
 .is--decoration {
@@ -77,10 +80,6 @@
 	width: 104%;
 	height: 100%;
 	left: calc(50% - 104% / 2);
-}
-
-.is--hidden {
-	opacity: 0;
 }
 
 .h-nav__bannerBox__banner__figureBox {

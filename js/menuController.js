@@ -26,10 +26,8 @@ function click() {
 
 function openMenu() {
 	menu.classList.add(openClass);
-	flagButton[1].classList.add(hiddenClass);
 }
 
 function closeMenu() {
 	menu.classList.remove(openClass);
-	flagButton[1].classList.remove(hiddenClass);
 }
