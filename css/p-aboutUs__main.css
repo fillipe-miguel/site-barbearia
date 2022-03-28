@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+.m-aboutUs {
+	background: rgb(35, 35, 35);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20vh;
+}
+
+.m-aboutUs__card {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.m-aboutUs__image {
+	border: 3px solid rgb(123, 2, 2);
+	border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.m-aboutUs__title{
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.m-aboutUs__description{
+    text-align: center;
+    font-size: 1rem;
+}

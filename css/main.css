@@ -203,6 +203,7 @@
 	width: 100%;
 	padding: 10px 0px;
 	margin-top: 20px;
+	text-align: center;
 }
 
 /* --------------------------------- INFORMATIONS START --------------------------------- */
@@ -266,7 +267,7 @@
 @media (min-width: 850px) {
 	.m-services__cards {
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: wrap;	
 		justify-content: space-between;
 	}
 
@@ -286,6 +287,7 @@
 	.m-aboutUs__card__pictureBox {
 		order: 2;
 		width: 50%;
+		margin-left: 20px;
 	}
 
 	.m-aboutUs__card__textBox {

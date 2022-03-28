@@ -15,6 +15,12 @@
 	position: relative;
 }
 
+.is--hidden {
+	background: none;
+	height: auto;
+	overflow: visible;
+}
+
 .h-nav {
 	align-items: center;
 	background: rgb(24, 24, 24);
@@ -110,6 +116,10 @@
 	position: absolute;
 	top: 15px;
 	transform: scale(1.2);
+}
+
+.is--secoundary::after {
+	content: none;
 }
 
 .h-nav__bannerBox__banner__title::after {
